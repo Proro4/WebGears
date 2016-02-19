@@ -1,4 +1,5 @@
 @media screen and (max-width: 1100px) {
+	.slogan-wg{display: none;}
 	.tablet-block .title{
 		margin-left: 45px;
 		bottom: 10px;
@@ -77,7 +78,9 @@
 		display: none;
 	}
 	.slider-tablet{
-		display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 	}
  }
  @media screen and (max-width:880px){

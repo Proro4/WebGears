@@ -110,7 +110,7 @@ float: right;}
 	position: relative;
 	height: 610px;
 	width: 100%;
-	background: url(../img/header-bck.png) center top no-repeat, #0e1842;}
+	background: url(../img/header-bck.png) center top, #0e1842;}
 .header-top{
 	height: 69px;
 	padding-top: 12px;
@@ -297,9 +297,9 @@ float: right;}
 	content: "";
 	width: 100%;
 	height: 300px;
-	background: url(../img/back-two.png)no-repeat center -50px;
+	background: url(../img/back-two.png)repeat-x center -50px;
 	position: absolute;
-	top: -100px;
+	top: -85px;
 }
 .tablet-block .title{
     color: #6d81b4;
@@ -496,12 +496,15 @@ border-color: #a17ac9 transparent transparent transparent;
 	position: relative;
 	padding-left: 25px;
 }
-.services.price .tablet-block, .services.contact .tablet-block{
+.services.price .tablet-block{
+	margin-top: 15px;
+}
+.services.contact .tablet-block{
 	margin-top: 50px;
 }
 .services.price:after{
 	height: 150%;
-	background: url(../img/bck-price.png)no-repeat center -35px;
+	background: url(../img/bck-price.png)no-repeat center -35px,url(../img/bck-price-1.png)repeat center -34px;
 }
 .services.price .tb-name{
 	text-align: right;
@@ -571,15 +574,18 @@ border-color: #a17ac9 transparent transparent transparent;
 	top:48%; 
 	position: absolute;
 }
+.owl-nav .owl-next, .owl-nav .owl-prev{
+	transform:scale(0.92);
+}
 .owl-nav .owl-next:active, .owl-nav .owl-prev:active{
-transform:rotate(10deg);
+	transform:scale(1);
 }
 
 .services.portfolio:after{
 content: "";
 width: 100%;
 min-height: 600px;
-background: url(../img/bck-port.png)no-repeat center top;
+background: url(../img/bck-port.png)repeat center top;
 }
 .services.portfolio .tablet-block{
 	margin-top: 50px;
@@ -843,33 +849,28 @@ background: url(../img/bck-port.png)no-repeat center top;
 }
 .head-fixed{
 	position: fixed;
-	background: rgba(37,63,117,0.9);
+	background: rgba(48,58,75,0.9);
 	z-index: 15;
 	top: -100px;
 	width: 1000px;
 }
-.head-fixed:after{
-	width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 100px 56px 0;
-border-color: transparent rgba(37,63,117,0.9) transparent transparent;
-content: '';
-position: absolute;
-left: -100px;
-top: 0;
+.head-fixed .fix-head-left{
+	width: 100px;
+	background: rgba(48,58,75,0.9);
+	height: 56px;
+	content: '';
+	position: absolute;
+	left: -100px;
+	top: 0;
 }
-.head-fixed:before{
-	width: 0;
-height: 0;
-border-style: solid;
-border-width: 56px 100px 0 0;
-border-color: rgba(37,63,117,0.9) transparent transparent transparent;
-
-content: '';
-position: absolute;
-right: -100px;
-top: 0;
+.head-fixed .fix-head-right{
+	width: 100px;
+	background: rgba(48,58,75,0.9);
+	height: 56px;
+	content: '';
+	position: absolute;
+	right: -100px;
+	top: 0;
 }
 .tb-prof{
 	position: relative;
@@ -930,12 +931,13 @@ top: 0;
 .slider-tablet{
 	position: relative;
     height: 551px;
-    width: 100%;
-    bottom: 0px;
-    left: 0;
+    width: 55%;
+    bottom: 8px;
+    left: 100px;
     background: url(../img/tablet/slider.png)no-repeat center;
-    display: none;
+    /*display: none;*/
     color: white;
+    display: inline-block;
 }
 .slider-tb-content{
 	width: 460px;
@@ -1020,4 +1022,50 @@ top: 0;
     height: 0;
     position: relative;
     top: 60px;
+    }
+    .slogan-wg{
+    	display: inline-block;
+    	width: 370px;
+    	height: 500px;
+   	 vertical-align: middle;
+    position: relative;
+    }
+
+    .slogan-wg:after{
+    	background: url(../img/slider-bck.png)no-repeat  left top;
+    	position: absolute;
+    	content: "";
+    	height:383px;
+    	width:673px;
+    	left: -52px;
+    	top: 0;
+		z-index: 1;
+    }
+
+    .slogan-wg-logo,.slogan-wg-text,.slogan-wg-title{
+    	position: relative;
+    	z-index: 2;
+    	padding-left: 75px;
+
+    }
+    .slogan-wg-title{
+    	color: #57edff;
+    	font-weight: bold;
+    	font-size: 18px;
+    	padding-top: 40px;
+    }
+    .slogan-wg-logo{
+    	text-shadow: 1px 2px 1px #2a325f;
+    	font-size: 36px;
+    	font-weight: bold;
+    	color: white;
+    	text-transform: uppercase;
+    	padding: 15px 0px 15px 75px;
+    }
+    .slogan-wg-text{
+    	font-size: 14px;
+    	color: white;
+    }
+    .logo {
+    	padding-top: 5px;
     }

@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+	//header top
+
+	var widthHead = $('.head-top').width();
+	var widthBody = $('body').width();
+	var widthLine = (widthBody - widthHead)/2;
+	console.log(widthLine)
+	$('.fix-head-left').css({'width': widthLine, 'left':-widthLine})
+	$('.fix-head-right').css({'width': widthLine, 'right':-widthLine})
+
 	$('.header-top-menu .header-hidden').offset({left:0});
 	$('.header-top-menu').on('click',function(){
 		if($('.header-hidden').height()==0){
