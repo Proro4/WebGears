@@ -376,7 +376,8 @@ float: right;}
 	}
 .tb-info-buttom{
 	text-align: right;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
+	margin-top: 20px;
 }
 .tb-info-buttom a{
 	color: white;
