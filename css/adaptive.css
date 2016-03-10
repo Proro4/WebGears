@@ -78,6 +78,9 @@
     left: 0;
     background: url(../img/tablet/back-two.png)no-repeat center -50px;
 	}
+	.header.other-head:after{
+		background: none;
+	}
 	.slider-top{
 		display: none;
 	}
@@ -132,9 +135,10 @@
  	}
  }
  @media screen and (max-width:785px){
- 	.tb-block-info{
 
- 	}
+	.question-title,.question-text{
+		padding:0 15px;
+	}
  	.tb-info-title,.tb-info-text,.partner-title,.partner-text,.title.left {
  		margin-left: 10px;
  		margin-right: 10px;

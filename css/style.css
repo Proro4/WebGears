@@ -1148,6 +1148,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 }
 .header.other-head{
 	height: 69px;
+	z-index: 2;
 }
 .services.other-services:after{
 	content: "";
