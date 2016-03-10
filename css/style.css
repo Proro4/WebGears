@@ -1167,16 +1167,68 @@ background: url(../img/bck-port.png)no-repeat center top;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	width: 80%;
+	cursor: pointer;
 }
 .tb-info-text .text-popup{
+	overflow: hidden;
+	height: 0;
+	padding: 0;
+}
+.tb-info-text .text-popup p{
 	color: #000000;
 	background: #f8f8f8;
 	border-top:1px solid #d9d9d9;
-	padding: 15px;
+	padding:15px;
+	opacity: 0.9;
+
 }
 .tb-info-text ul{
 	padding-left: 40px;
 }
 .tb-info-text ul li{
 	margin-bottom: 20px;
+	position: relative;
+}
+.arrow-pop-up{
+	cursor: pointer;
+	transition:0.3s all;
+	position: absolute;
+	left: -30px;
+	top:0;
+	height: 15px;
+	width: 15px;
+	background: url(../img/arrow-pop-up.png)no-repeat center;
+}
+.services.question.reviews{
+	position: relative;    
+	min-height: 225px;
+	padding-top: 135px;
+}
+.services.question.reviews:after{
+	background: url(../img/question-bck.png)no-repeat center top;
+	top:0;
+	height: 400px;
+}
+.services.other-services{
+	padding-bottom: 0;
+}
+.question-title,.question-text{
+	position: relative;
+	z-index: 10;
+}
+.question-title{
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Calibri';
+}
+.question-text{
+	padding-top: 15px;
+	font-size: 18px;
+	color: white;
+	font-family: 'Calibri';
+	opacity: 0.7;
+}
+.services.contact .other-tablet.tablet-block{
+	margin-top: 65px;
 }
