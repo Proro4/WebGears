@@ -1148,7 +1148,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 }
 .header.other-head{
 	height: 69px;
-	z-index: 2;
+	z-index: 20;
 }
 .services.other-services:after{
 	content: "";
@@ -1232,4 +1232,8 @@ background: url(../img/bck-port.png)no-repeat center top;
 }
 .services.contact .other-tablet.tablet-block{
 	margin-top: 65px;
+}
+.language{
+	position: relative;
+	z-index: 20;
 }
