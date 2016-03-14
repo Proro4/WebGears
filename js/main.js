@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	//big-diagonal
 		var widthBck = 2287;
 		var widthBody = $('body').width();
@@ -52,14 +53,14 @@ $(document).ready(function(){
 		var heightLang = $('.language').height();
 		$('.lang .lang-but').on('click',function(){
 	if($('.lang').height() == 20){ 
-		$('.lang').css('background','#718BBA')
-		$('.lang').animate({'height':heightLang},200)
+		$('.lang').css('background','#718BBA');
+		$('.lang').animate({'height':heightLang},200);
 		$('.lang-but').css('display','none');
 		}
 	})
 $('.lang .lang-but').on('click',function(){
 	if($('.lang').height() == 25){ 
-		$('.lang').animate({'height':'65px'},200)
+		$('.lang').animate({'height':'65px'},200);
 		$('.lang-but').css('display','none');
 		}
 	})
@@ -67,13 +68,13 @@ $('.lang .lang-but').on('click',function(){
 	$('.lang').on('click',function(){
 	if($('.lang').height() == heightLang){ 
 		$('.lang').css('background','url(../img/arrow-lang.png) no-repeat 42px 8px')
-		$('.lang').animate({'height':'20px'},200)
+		$('.lang').animate({'height':'20px'},200);
 		$('.lang-but').css('display','block');
 		}
 	})
 	$('.lang').on('click',function(){
 	if($('.lang').height() == 65){ 
-		$('.lang').animate({'height':'25px'},200)
+		$('.lang').animate({'height':'25px'},200);
 		$('.lang-but').css('display','block');
 		}
 	})
@@ -155,7 +156,6 @@ $(document).ready(function(){
 
         $(".owl-carousel").owlCarousel({ 
             center:false,
-            loop:true,
 		    margin:10,
 		    responsiveClass:true,
 		    responsive:{
@@ -174,8 +174,7 @@ $(document).ready(function(){
 		    }
         });
         $(".owl-carousel-top").owlCarousel({ 
-            center:false,
-            loop:true,
+            center:false,	
 		    margin:10,
 		    responsiveClass:true,
 		    responsive:{
@@ -203,9 +202,12 @@ $(document).ready(function(){
 	if($(window).width() > 1100){
  	if($(this).scrollTop() > $('#services').offset().top-100){
  		$('.head-top').addClass('head-fixed');
+ 		$('.bottom-left').addClass('bottom-left-h');
  	}
  	else{
+
  		$('.head-top').removeClass('head-fixed');
+ 		$('.bottom-left').removeClass('bottom-left-h');
  	}
   if($(this).scrollTop() > $('#services').offset().top-100){
  			$('.head-fixed').animate({'top':'0'},300);

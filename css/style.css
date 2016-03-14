@@ -1239,3 +1239,56 @@ background: url(../img/bck-port.png)no-repeat center top;
 	position: relative;
 	z-index: 20;
 }
+.bottom-left{
+	/*display: none;*/
+	position: fixed;
+	left: -500px;
+	top: 250px;
+	z-index: 1000;
+	transform:rotate(-90deg);
+	transition:0,5s all;
+}
+.bottom-one{
+	margin-right: 15px;
+	display: inline-block;
+	height: 78px;
+	border:1px solid #8d61b1;
+	background: linear-gradient(to bottom, #986dbc 0%, #ad8cdb 100%);
+	transform:skew(-30deg);
+}
+.bottom-one a{
+	display: inline-block;
+	padding: 0 15px;
+	font-family: 'Calibri';
+	font-size: 22px;
+	text-transform: uppercase;
+	color: white;
+	transform:skew(30deg);
+	line-height: 110px;
+}
+.bottom-one:hover{
+	background: linear-gradient(to bottom, #986dbc 20%, #ad8cfb 30%);
+}
+.bottom-two{
+	display: inline-block;
+	height: 78px;
+	border:1px solid #20448a;
+	background: linear-gradient(to bottom, #2d4f93 0%, #4d81b3 100%);
+	transform:skew(-30deg);
+}
+.bottom-two a{
+	display: inline-block;
+	padding: 0 15px;
+	font-family: 'Calibri';
+	font-size: 22px;
+	text-transform: uppercase;
+	color: white;
+	transform:skew(30deg);
+	line-height: 110px;
+}
+.bottom-two:hover{
+	background: linear-gradient(to bottom, #2d4f93 20%, #4d81b3 30%);
+}
+.bottom-left.bottom-left-h{
+	left:-172px;
+}
