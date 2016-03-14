@@ -172,7 +172,8 @@ float: right;}
         margin-right: 10px;
         width: 55px;
         padding-right: 15px;
-        position: relative;
+        position: absolute;
+        right: 0;
         cursor: pointer;
         float: right;
         padding-left: 10px;
@@ -309,6 +310,7 @@ float: right;}
 	text-transform: uppercase;
 	font-family: 'Calibri';
 	font-weight: bold;
+	min-width: 200px;
 }
 .tb-block{
 	position: relative;
