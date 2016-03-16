@@ -1292,3 +1292,32 @@ background: url(../img/bck-port.png)no-repeat center top;
 .bottom-left.bottom-left-h{
 	left:-172px;
 }
+.vacancies-text{
+	padding-top: 125px;
+}
+.services.vacancies-tab:after{
+	background: none;
+}
+.services.vacancies-tab{
+	background: linear-gradient(to right, white 0%, #e9e8f2 100%);
+
+}
+.services.vacancies-tab .title{
+	padding-top: 15px;
+	color: #654185;
+}
+.services.vacancies-tab .title:after{
+	content: "";
+	position: absolute;
+	left:-80px;
+	bottom: -10px;
+	background: url(../img/our-servises.png)no-repeat center;
+	height: 70px;
+	width: 336px;
+}
+.tb-info-text p{
+	margin: 8px 0;
+	font-size: 16px;
+	font-family: 'Calibri';
+	line-height: 1.1;
+}
