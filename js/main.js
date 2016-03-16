@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	
+        setTimeout(function() {
+        $('.tracker-summation-current,.tracker-summation-middle,.tracker-summation-total').css('display','none');
+      },500)
+
 	//big-diagonal
 		var widthBck = 2287;
 		var widthBody = $('body').width();
@@ -81,24 +86,24 @@ $('.lang .lang-but').on('click',function(){
 	var bodyWidth = $('body').width();
 	var widthl = $('.tb-block').width();
 	var c = (bodyWidth - widthl) / 2;
-	var tbMenu = $('.tb-name li:eq(0)').offset()
-	var tbwidth = $('.tb-name li:eq(0)').width()
-	var fTbMenu = tbMenu.left
+	var tbMenu = $('.tb-name li:eq(0)').offset();
+	var tbwidth = $('.tb-name li:eq(0)').width();
+	// var fTbMenu = tbMenu.left;
 	$('.tb-name').each(function(){
 		var widthMenu = $(this).find('li').eq(0).width();
 		var posMenu = $(this).eq(0).find('li').offset();
 		$(this).addClass('tb-active');
 		if($(window).width() <= 1100){
-			$(this).parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left)+15},300)
+			$(this).parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left)+15},300);
 		}
-		$(this).parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left-c)+15},300)
+		$(this).parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left-c)+15},300);
 	})
 	$('.tb-name li,.tb-name-adaptive li').on('click',function(){
 		var widthMenu = $(this).width();
 		var posMenu = $(this).offset();
 		$('.tb-name li,.tb-name-adaptive li').removeClass('tb-active');
 		$(this).addClass('tb-active');
-		$(this).parent().parent().parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left-c)+15},300)
+		$(this).parent().parent().parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left-c)+15},300);
 		// if($(window).width() <= 1100){
 		// 	$(this).parent().find('.tb-line-block').animate({'width': widthMenu,'left': (posMenu.left)+15},300)
 		// }
@@ -109,13 +114,13 @@ $('.lang .lang-but').on('click',function(){
 	//position active menu
 		var fMenu = $('.header-menu li a:eq(0)').offset()
 		var firstMenu = fMenu.left
-		$('.active-menu').css({"left":firstMenu-20-c})
+		$('.active-menu').css({"left":firstMenu-20-c});
 		$('.header-menu li a').on('click',function(){
 			var widthMenu = $(this).parent().width();
 			var posMenu = $(this).parent().offset();
-			$('.active-menu').animate({'width': widthMenu,'left': posMenu.left-c},500)
+			$('.active-menu').animate({'width': widthMenu,'left': posMenu.left-c},500);
 		if($(window).width() <= 1100){
-			$('.active-menu').animate({'width': widthMenu,'left': posMenu.left},500)
+			$('.active-menu').animate({'width': widthMenu,'left': posMenu.left},500);
 		}
 		})
   //anchor menu-click scroll
@@ -174,6 +179,25 @@ $(document).ready(function(){
 		    }
         });
         $(".owl-carousel-top").owlCarousel({ 
+            center:false,	
+		    margin:10,
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        600:{
+		            items:1,
+		            nav:false
+		        },
+		        1100:{
+		            items:1,
+		            nav:false
+		        }
+		    }
+        });
+        $(".owl-carousel-p").owlCarousel({ 
             center:false,	
 		    margin:10,
 		    responsiveClass:true,
@@ -318,3 +342,9 @@ setTimeout(function(){
 	$('.fix-head-right').css({'width': widthLine, 'right':-widthLine})
 
  })
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });

@@ -90,6 +90,16 @@
     width: 100%;
 	}
  }
+@media screen and (max-width: 992px) {
+
+#carousel-left{
+  left:20px;
+}
+#carousel-right {
+  right:20px;
+
+}
+}
  @media screen and (max-width:880px){
  	.owl-nav .owl-next{
  		right: -25px;
@@ -106,7 +116,22 @@
 	left: -35px;
 }
  }
+@media screen and (max-width: 840px) {
+  .arrow-top,.carousel-container{
+    display: none !important;
+  }
+  .owl-carousel-p{
+  display: block !important;
+}
+}
  @media screen and (max-width:820px){
+ 	.portfolio-text{
+ 		padding: 0 15px;
+ 	}
+ 	.portfolio-theme{
+ 		float: right;
+ 		margin-right: 15px;
+ 	}
  	.price-slide {
     width: 235px;
     text-align: center;
