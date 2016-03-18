@@ -1296,6 +1296,8 @@ background: url(../img/bck-port.png)no-repeat center top;
 	color: white;
 	transform:skew(30deg);
 	line-height: 110px;
+	    min-width: 150px;
+	    text-align: center;
 }
 .bottom-two:hover{
 	background: linear-gradient(to bottom, #2d4f93 20%, #4d81b3 30%);
@@ -1321,7 +1323,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 	content: "";
 	position: absolute;
 	left:-80px;
-	bottom: -10	px;
+	bottom: -10px;
 	background: url(../img/our-servises.png)no-repeat center;
 	height: 70px;
 	width: 336px;
@@ -1447,4 +1449,27 @@ background: url(../img/bck-port.png)no-repeat center top;
  }
   .slider-box .owl-carousel-p img{
   	display: inline-block;
+  }
+  .info-box{
+  	height: 100px;
+  	width: 60%;
+  	left: 5000px;
+  	top: 150px;
+  	position: fixed;
+  	z-index: 1000;
+	background: linear-gradient(to bottom, #efecf6 0%, #f3f0f7 100%);
+	border:2px solid #1B3D86;
+	text-align: center;
+	padding-top:35px;
+  }
+  .success-info{
+  	font-size: 20px;
+  	text-transform: uppercase;
+  }
+  .foot-info-exit{
+  	position: absolute;
+  	right: 10px;
+  	top: 10px;
+  	font-family: cursive;
+	cursor: pointer;
   }

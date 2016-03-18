@@ -1,13 +1,39 @@
 $(document).ready(function(){
 
-	
+
+ 		if($('.slider-box').length > 0){
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+        }
+
+
+
+
+		var widthBody = $('body').width();
+	//info box
+
+		var iBoxWidth = $('.info-box').width();
+		var leftIbWidth = (widthBody -iBoxWidth) / 2;
+		setTimeout(function(){
+			$('.info-box').animate({'left':leftIbWidth},600);
+		},1000)
+		setTimeout(function(){
+			$('.info-box').animate({'left':'5000px'},600);
+		},3000);
+		$('.foot-info-exit').on('click',function(){
+			$('.info-box').animate({'left':'5000px'},600);
+		})
+	//info box end
         setTimeout(function() {
         $('.tracker-summation-current,.tracker-summation-middle,.tracker-summation-total').css('display','none');
       },500)
 
 	//big-diagonal
 		var widthBck = 2287;
-		var widthBody = $('body').width();
 		var widthDig = (widthBody - widthBck) / 2;
 		$('.services-bck-l,.services-bck-r').css('width',widthDig)
 
@@ -342,9 +368,3 @@ setTimeout(function(){
 	$('.fix-head-right').css({'width': widthLine, 'right':-widthLine})
 
  })
-        var carousel = $("#carousel").featureCarousel({
-          // include options like this:
-          // (use quotes only for string values, and no trailing comma after last option)
-          // option: value,
-          // option: value
-        });
