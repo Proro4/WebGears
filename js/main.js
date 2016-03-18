@@ -151,13 +151,13 @@ $('.lang .lang-but').on('click',function(){
 		})
   //anchor menu-click scroll
    $('a[href*=#]').bind("click", function(e){
-var anchor = $(this);
-$('html, body').stop().animate({
-scrollTop: $(anchor.attr('href')).offset().top -70
-}, 1000);
-e.preventDefault();
-return false;
-});
+		var anchor = $(this);
+		$('html, body').stop().animate({
+		scrollTop: $(anchor.attr('href')).offset().top -70
+		}, 1000);
+		e.preventDefault();
+		return false;
+	});
  	var widthCont = $('.row').width();
   	$('.head-fixed').css('width',widthCont);
 
@@ -250,7 +250,7 @@ $(document).ready(function(){
 	var widthl = $('.tb-block').width();
 	var c = (bodyWidth - widthl) / 2;
 	if($(window).width() > 1100){
- 	if($(this).scrollTop() > $('#services').offset().top-100){
+ 	if($(this).scrollTop() > 450){
  		$('.head-top').addClass('head-fixed');
  		$('.bottom-left').addClass('bottom-left-h');
  	}
@@ -259,7 +259,7 @@ $(document).ready(function(){
  		$('.head-top').removeClass('head-fixed');
  		$('.bottom-left').removeClass('bottom-left-h');
  	}
-  if($(this).scrollTop() > $('#services').offset().top-100){
+  if($(this).scrollTop() > 450){
  			$('.head-fixed').animate({'top':'0'},300);
  	}
  	else if($(this).scrollTop() < $('#services').offset().top-100){
