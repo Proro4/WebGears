@@ -851,12 +851,13 @@ background: url(../img/bck-port.png)no-repeat center top;
 	display: block;
 }
 .min-width{
-	width: 75%;
+	width: 100%;
 }
 .all-prof{
 	position: absolute;
 	height: 35px;
 	min-width:100%;
+	left: 0px;
 }
 .feedback input[type='name']:focus,.feedback textarea:focus {
     border: 1px solid #C8B3FF;
@@ -891,12 +892,14 @@ background: url(../img/bck-port.png)no-repeat center top;
 
 }
 .services.price .all-prof{
-	right: 0;
+	left: 0;
+	text-align: left;
 }
 .services.price .min-width{
-	float: right;
+	float: left;
 }
 .services.price .tb-arrows{
+	display: none;
 	left: 0;
 	right: auto;
 }
@@ -1010,26 +1013,27 @@ background: url(../img/bck-port.png)no-repeat center top;
     	display: inline-block;
     	width: 370px;
     	height: 500px;
-   	 vertical-align: middle;
+   	 vertical-align: top;
     position: relative;
+    margin-top: 150px;
     }
-
-    .slogan-wg:after{
-    	background: url(../img/slider-bck.png)no-repeat  left top;
-    	position: absolute;
-    	content: "";
-    	height:383px;
-    	width:673px;
-    	left: -52px;
-    	top: 0;
-		z-index: 1;
-    }
+    
 
     .slogan-wg-logo,.slogan-wg-text,.slogan-wg-title{
     	position: relative;
     	z-index: 2;
     	padding-left: 75px;
 
+    }
+    .slogan-wg:after{
+    	position: absolute ;
+    	content: ' ' ;
+    	height:383px ;
+    	width:673px ;
+    	left: -52px ;
+    	top: 0 ;
+		z-index: 1 ;
+    	background: url(../img/slider-bck.png)no-repeat  left top ;
     }
     .slogan-wg-title{
     	color: #57edff;
@@ -1478,7 +1482,9 @@ background: url(../img/bck-port.png)no-repeat center top;
   	font-family: cursive;
 	cursor: pointer;
   }
-  .tb-line-h{    position: absolute;
+  .tb-line-h{   
+  	display: none;
+   position: absolute;
     left: 0;
     bottom: -1px;
     width: 25%;
@@ -1488,4 +1494,4 @@ background: url(../img/bck-port.png)no-repeat center top;
     border-radius: 5px;
 }
 
-  }
+  

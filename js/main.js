@@ -62,7 +62,7 @@ if(nextSlide > 0){
 				},1000)
 				setTimeout(function(){
 					$('.info-box').animate({'left':'5000px'},600);
-				},4000);
+				},5000);
 			}
 			$('.foot-info-exit').on('click',function(){
 				$('.info-box').animate({'left':'5000px'},600);

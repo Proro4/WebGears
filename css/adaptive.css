@@ -1,5 +1,21 @@
 
 @media screen and (max-width: 1100px) {
+	.tb-line-h{
+		display: block;
+	}
+.services.price .all-prof {
+    left: 0;
+    text-align: inherit;
+}
+.services.price .tb-arrows{
+	display: block;
+}
+.services.price .min-width{
+	float: right;
+}
+.min-width {
+    width: 75%;
+}
 	.services.contact .tablet-block{
 	 margin-top: 75px;
 	}
@@ -63,7 +79,7 @@
 		margin-right: 40px;
 	}
 	.services.portfolio .title{
-		margin-right: 30px;
+		margin-right:  0px;
 	}
 	.services:after{
 		background: none;
@@ -160,6 +176,10 @@
  	}
  }
  @media screen and (max-width:785px){
+ 	.services.portfolio:after {
+    width: 120%;
+    right: 0
+}
 
 	.question-title,.question-text{
 		padding:0 15px;
@@ -218,6 +238,10 @@
  	}
 }
  @media screen and (max-width:610px){	
+ 	.services.portfolio:after {
+    width: 140%;
+    right: 0
+}
 .services.price .min-width{
 	float: none;
 }
@@ -255,7 +279,7 @@
 	}
 	.services.portfolio:after{
 		content: "";
-		width: 100%;
+		width: 140%;
 		min-height: 600px;
 		background: url(../img/tablet/bck-port2.png)no-repeat center top;
 	}
@@ -292,6 +316,11 @@
 	}
  }
  @media screen and (max-width:410px){
+ 	.services.portfolio:after {
+    width: 160%;
+    right: 0
+}
+
 	.header-top-menu{
 		margin-left: 0%;
 	}
