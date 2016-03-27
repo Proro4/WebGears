@@ -29,10 +29,11 @@
 								<li><a href="#portfolio">Портфолио</a></li>
 								<li><a href="#reviews">Отзывы</a></li>
 								<li><a href="#contact">Контакты</a></li>
-								<div class="active-menu"></li>
+								<li class="active-menu"></li>
 							</ul>
 							<ul class="header-top-menu  col-xs-offset-6 col-xs-3">
-								<div class="header-hidden">
+								<li class="header-hidden">
+									<ul>
 										<li><a href="#header">о нас</a></li>
 										<li><a href="#services">услуги</a></li>
 										<li><a href="#our-services">Сервисы</a></li>
@@ -40,7 +41,8 @@
 										<li><a href="#portfolio">Портфолио</a></li>
 										<li><a href="#reviews">Отзывы</a></li>
 										<li><a href="#contact">Контакты</a></li>
-								</div>
+									</ul>
+								</li>
 							</ul>
 							<div class="lang col-xs-1 no-padding">
 								<div class="lang-but"></div>
@@ -122,13 +124,13 @@
 							
 								<ul class="tb-name">
 									<span class="tb-prof">
-										<span class="all-prof">
-											<li class='tb-active' id='prof-1'><p>Веб-дизайн</p></li>
-											<li id='prof-2'><p>SEO-продвижение</p></li>
-											<li id='prof-3'><p>Веб-дизайн</p></li>
-											<li id='prof-4'><p>SEO-продвижение</p></li>
-											<li id='prof-5'><p>SEO-продвижение</p></li>
-										</span>
+											<span class="all-prof">
+												<li class='tb-active' id='prof-1'><p>Веб-дизайн</p></li>
+												<li id='prof-2'><p>SEO-продвижение</p></li>
+												<li id='prof-3'><p>Веб-дизайн</p></li>
+												<li id='prof-4'><p>SEO-продвижение</p></li>
+												<li id='prof-5'><p>SEO-продвижение</p></li>
+											</span>
 									</span>
 								<div class="tb-line">
 									<div class="tb-line-block"></div>
@@ -526,46 +528,46 @@
 										<div class="port-slide">
 											<img src="img/image.jpg" alt="#">
 											<a class="port-block" href="#">
-												<span>
+												<p>
 													<b>Название проекта название проекта</b>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-												</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+												</p>
 											</a>
 										</div>
 										<div class="port-slide">
 											<img src="img/image.jpg" alt="#">
 											<a class="port-block" href="#">
-												<span>
+												<p>
 													<b>Название проекта название проекта</b>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-												</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+												</p>
 											</a>
 										</div>
 										<div class="port-slide">
 											<img src="img/image.jpg" alt="#">
 											<a class="port-block" href="#">
-												<span>
+												<p>
 													<b>Название проекта название проекта</b>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-												</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+												</p>
 											</a>
 										</div>
 										<div class="port-slide">
 											<img src="img/image.jpg" alt="#">
 											<a class="port-block" href="#">
-												<span>
+												<p>
 													<b>Название проекта название проекта</b>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-												</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+												</p>
 											</a>
 										</div>
 										<div class="port-slide">
 											<img src="img/image.jpg" alt="#">
 											<a class="port-block" href="#">
-												<span>
+												<p>
 													<b>Название проекта название проекта</b>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-												</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+												</p>
 											</a>
 										</div>
 									</div>
@@ -712,7 +714,7 @@
 											</div>
 										</div>
 										<div class="price-slide">
-											<div class="p-name">
+											<div class="p-=">
 												название фирмы-партнера 
 											</div>
 											<div class="p-text">
@@ -781,11 +783,11 @@
 						<div class="title fback right">
 							обратная связь
 						</div>
-						<form action="" class="feedback">
-							<input type="name" placeholder="Ваше имя" required>
-							<input type="name" placeholder="Ваш e-mail или телефон" required>
-							<label class="form-text"><textarea name="" id="" placeholder="Текст сообщения"></textarea></label>
-							<label class="submit"><input type="submit" value="Отправить"></input></label>
+						<form action="#" class="feedback">
+							<input type="text" name="name" placeholder="Ваше имя" required>
+							<input type="text" name="tel-or-email" placeholder="Ваш e-mail или телефон" required>
+							<label class="form-text"><textarea name="message"  placeholder="Текст сообщения"></textarea></label>
+							<label class="submit"><input type="submit" value="Отправить"></label>
 
 						</form>
 					</div>
@@ -823,9 +825,9 @@
 			<div class="foot-info-exit">X</div>
 		</div>
 
-</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slider-top.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+</body>
 </html>
