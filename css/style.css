@@ -324,7 +324,7 @@ float: right;}
 .tb-name{
 	position: relative;
 }
-.tb-name li{
+.tb-name .all-prof li{
 	display: inline-block;
 	color: #bebebe;
 	font-size: 16px;
@@ -351,7 +351,7 @@ float: right;}
 	position: absolute;
 	border-radius: 3px;
 }
-.tb-name li.tb-active{
+.tb-name .all-prof li.tb-active{
 	color: #ae8ddc;
 }
 .tb-info{
@@ -608,7 +608,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 .port-block p b{
 	font-weight: normal;
 	text-transform: uppercase;
-	height: 60px;
+	height: 75px;
 	display: block;
 	padding-top: 15px;
 	overflow: hidden;
@@ -1137,7 +1137,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 	width: 200px;
 	margin: 0 auto; 
 }
-.tb-name-adaptive .min-width li{
+.tb-name-adaptive .min-width .list-menu{
 	height: 35px;
 	text-align: center;
 	width: 200px;

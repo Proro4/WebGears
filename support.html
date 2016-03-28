@@ -22,17 +22,18 @@
 							<div class="fix-head-right"></div>
 							<a href="#"  class="logo col-xs-3 no-padding"><img src="img/logo.png" alt="logo"><b>web’s gears</b></a>
 							<ul class="header-menu col-xs-8 no-padding">
-										<li><a href="#">о нас</a></li>
-										<li><a href="#header">Портфолио</a></li>
-										<li><a href="index.html#price">цены</a></li>
-										<li><a href="index.html#services">услуги</a></li>
-										<li><a href="index.html#our-services">Сервисы</a></li>
-										<li><a href="vacancies.html">Карьера</a></li>
-										<li><a href="#contact">Контакты</a></li>
-								<div class="active-menu"></div>
+								<li><a href="#">о нас</a></li>
+								<li><a href="#header">Портфолио</a></li>
+								<li><a href="index.html#price">цены</a></li>
+								<li><a href="index.html#services">услуги</a></li>
+								<li><a href="index.html#our-services">Сервисы</a></li>
+								<li><a href="vacancies.html">Карьера</a></li>
+								<li><a href="#contact">Контакты</a></li>
+								<li class="active-menu"></li>
 							</ul>
 							<ul class="header-top-menu  col-xs-offset-6 col-xs-3">
-								<div class="header-hidden">
+								<li class="header-hidden">
+									<ul>
 										<li><a href="#">о нас</a></li>
 										<li><a href="#header">Портфолио</a></li>
 										<li><a href="index.html#price">цены</a></li>
@@ -40,7 +41,8 @@
 										<li><a href="index.html#our-services">Сервисы</a></li>
 										<li><a href="vacancies.html">Карьера</a></li>
 										<li><a href="#contact">Контакты</a></li>
-								</div>
+									</ul>
+								</li>
 							</ul>
 							<div class="lang col-xs-1 no-padding">
 								<div class="lang-but"></div>
@@ -68,42 +70,42 @@
 						<div class="tb-block">
 							
 								<ul class="tb-name">
-									<span class="tb-prof">
-										<span class="all-prof">
-											<li class='tb-active' id='prof-1'>Веб-дизайн</li>
-											<li id='prof-2'>SEO-продвижение</li>
-											<li id='prof-3'>Веб-дизайн</li>
-											<li id='prof-4'>SEO-продвижение</li>
-											<li id='prof-5'>SEO-продвижение</li>
-										</span>
-									</span>
-								<div class="tb-line">
-									<div class="tb-line-block"></div>
-								</div>
-								<span class="tb-arrows dnone">
-									<span class="tb-left"></span>
-									<span class="tb-right"></span>
-								</span>
-								</ul>
-								
+									<li class="tb-prof">
+											<ul class="all-prof">
+												<li class='list-menu tb-active' names='prof-1'><p>Веб-дизайн</p></li>
+												<li class='list-menu' names='prof-2'><p>SEO-продвижение</p></li>
+												<li class='list-menu' names='prof-3'><p>Веб-дизайн</p></li>
+												<li class='list-menu' names='prof-4'><p>SEO-продвижение</p></li>
+												<li class='list-menu' names='prof-5'><p>SEO-продвижение</p></li>
+											</ul>
+									</li>
+									<li class="tb-line">
+										<ul class="tb-line-block"></ul>
+									</li>
+									<li class="tb-arrows dnone">
+										<ul class="tb-left"></ul>
+										<ul class="tb-right"></ul>
+									</li>
+								</ul>	
+
 								<ul class="tb-name-adaptive">
-									<span class="tb-prof">
-										<span class="all-prof">
-											<li class='tb-active' id='prof-1'>Веб-дизайн</li>
-											<li id='prof-2'>SEO-продвижение</li>
-											<li id='prof-3'>Веб-дизайн</li>
-											<li id='prof-4'>SEO-продвижение</li>
-											<li id='prof-5'>SEO-продвижение</li>
-										</span>
-									</span>
-											<span class="tb-left"></span>
-											<span class="tb-right"></span>
+									<li class="tb-prof">
+										<ul class="all-prof">
+											<li class='list-menu tb-active' names='prof-1'><p>Веб-дизайн</p></li>
+											<li class='list-menu' names='prof-2'><p>SEO-продвижение</p></li>
+											<li class='list-menu' names='prof-3'><p>Веб-дизайн</p></li>
+											<li class='list-menu' names='prof-4'><p>SEO-продвижение</p></li>
+											<li class='list-menu' names='prof-5'><p>SEO-продвижение</p></li>
+										</ul>
+									</li>
+											<li class="tb-left"></li>
+											<li class="tb-right"></li>
 								</ul>	
 
 							<!--tb-block-info begin-->
 							<div class="tb-block-info">
 							<!--tb-info begin-->
-								<div class="tb-info" name="prof-1">
+								<div class="tb-info" id="prof-1">
 									<div class="tb-info-text">
 										<ul>
 											<li>
@@ -138,7 +140,7 @@
 								</div>
 							<!--tb-info End-->
 							<!--tb-info begin-->
-								<div class="tb-info" name="prof-2">
+								<div class="tb-info" id="prof-2">
 									<div class="tb-info-title">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do dolore magna aliqua. 
 									</div>
@@ -198,11 +200,11 @@
 						<div class="title fback right">
 							обратная связь
 						</div>
-						<form action="" class="feedback">
-							<input type="name" placeholder="Ваше имя" required>
-							<input type="name" placeholder="Ваш e-mail или телефон" required>
-							<label class="form-text"><textarea name="" id="" placeholder="Текст сообщения"></textarea></label>
-							<label class="submit"><input type="submit" value="Отправить"></input></label>
+						<form action="#" class="feedback">
+							<input type="text" placeholder="Ваше имя" required>
+							<input type="text" placeholder="Ваш e-mail или телефон" required>
+							<label class="form-text"><textarea  placeholder="Текст сообщения"></textarea></label>
+							<label class="submit"><input type="submit" value="Отправить"></label>
 
 						</form>
 					</div>
@@ -235,9 +237,9 @@
 	</div>
 
 
-</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slider-top.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+</body>
 </html>
