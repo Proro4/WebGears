@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+//arrow-top
+ $('.arrow-top').hover(function(){
+ 	$(this).animate({'top':'-90px'},200);
+ })
+ $('.arrow-top').mouseleave(function(){
+ 	$(this).animate({'top':'-70px'},200);
+ })
+  $('.arrow-top .arrow-but').on('click',function(){
+  	$('html, body').animate({scrollTop: 0},500);
+    return false;
+  })
 		
 setTimeout(function(){
   $('.tracker-individual-container li').on('click', function(){

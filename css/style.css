@@ -168,7 +168,7 @@ float: right;}
 		line-height: 1.3;
         overflow: hidden;
         height: 20px;
-        top: 18px;
+        top: 16px;
         margin-right: 10px;
         width: 55px;
         padding-right: 15px;
@@ -1494,5 +1494,24 @@ background: url(../img/bck-port.png)no-repeat center top;
     height: 6px;
     border-radius: 5px;
 }
-
-  
+.arrow-top{
+	width: 50px;
+	height: 94px;
+	cursor: pointer;
+	position: absolute;
+	right: 200px;
+	top: -70px;
+}
+.arrow-img{
+	height: 100%;
+	width: 100%;
+	background: url(../img/arrow-top.png)no-repeat;
+}
+.arrow-but{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+}
