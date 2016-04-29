@@ -363,11 +363,16 @@ float: right;}
 	margin-top: 25px;
 }
 .tb-info-title{
+}
+.tb-info-text h2{
 	font-family: 'Calibri';
 	font-size: 18px;
 	color: #4575ab;
 	text-transform: uppercase;
 	width: 55%;
+}
+.tb-info-text h2:nth-child(2n){
+	color:#654185;
 }
 .tb-info-text{
 	margin-top: 20px;
@@ -1514,4 +1519,7 @@ background: url(../img/bck-port.png)no-repeat center top;
 	z-index: 5;
 	height: 100%;
 	width: 100%;
+}
+.price-slide .tb-info-buttom{
+	text-align: center;
 }
