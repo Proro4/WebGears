@@ -303,6 +303,19 @@ $(document).ready(function(){
 		    }
         });
 
+// height tb-info slide
+	
+	var maxHeight = 0;
+	$('.p-text').each(function(){
+		var tbHeight = $(this).height();
+		if(tbHeight >= maxHeight){
+			maxHeight = tbHeight;
+		}
+		var mHeight = maxHeight;
+	})
+
+		$('.p-text').css('height',maxHeight);
+
       });
 
  $(window).scroll(function() {
